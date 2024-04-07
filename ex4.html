@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication & Division</title>
+</head>
+<body>
+    1st Number: <input type = "text" id="num1"><br><br>
+    2nd Number:<input type="text" id="num2"><br><br>
+    <button type="submit" id="Multiplication" onclick="mul()">Multiply</button>
+    <button type="submit" id="Division" onclick="div()">Divide</button>
+    <p id="result">The Result is: </p>
+    <script>
+        function mul(){
+            var value1=document.getElementById("num1").value;
+            var value2=document.getElementById("num2").value;
+
+            var result= document.getElementById("result");
+
+            var box1=Number(value1);
+            var box2=Number(value2);
+
+            var resultValue=box1*box2;
+            result.textContent="The Result is "+ resultValue;
+            
+        }
+        function div(){
+            var value1=document.getElementById("num1").value;
+            var value2=document.getElementById("num2").value;
+
+            var result= document.getElementById("result");
+
+            var box1=Number(value1);
+            var box2=Number(value2);
+
+            if(box2!==0){
+                var resultValue=box1/box2;
+                result.textContent="The Result is "+ resultValue;
+            }else{
+                result.textContent="Cannot divide by zero";
+            }
+
+           
+            
+        }
+    </script>
+    
+</body>
+</html>
