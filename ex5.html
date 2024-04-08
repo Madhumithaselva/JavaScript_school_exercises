@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let c;
+        let f;
+        function farenheitToCelcius(farenheitToConvert){
+            c=(f-32)*5/9;
+            return c;
+        }
+        function celciusToFarenheit(celciusToConvert){
+            f= (c * 9/5) + 32;
+            return f;
+
+        }
+        c=60;
+        let Fahrenheit=celciusToFarenheit(c);
+        console.log(c+"*C is "+Fahrenheit);
+        f=45;
+        let celcius=farenheitToCelcius(f);
+        console.log(f+"*F is "+celcius+"*C");
+    </script>
+    
+
+</body>
+</html>
